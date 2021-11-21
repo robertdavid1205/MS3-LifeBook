@@ -1,3 +1,15 @@
-body {
-    background-color: bisque;
+.text-shadow {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7) ;
+}
+
+.nav-extended {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 600;
+}
+
+.sidenav {
+    background-color: #f57c00;
+    opacity: 0.8;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 600;
 }
