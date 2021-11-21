@@ -7,6 +7,10 @@
     font-weight: 600;
 }
 
+nav.nav-extended {
+    padding-left: 9px;
+}
+
 .sidenav {
     background-color: #f57c00;
     opacity: 0.8;
