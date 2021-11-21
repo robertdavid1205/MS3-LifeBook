@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>CACACA</h2>
+
     {% for book in books %}
         {{ book.book_author }}<br>
         {{ book.book_title }}<br>
@@ -14,5 +10,5 @@
         {{ book.details }}<br>
         {{ book.genre }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}    
