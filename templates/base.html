@@ -27,6 +27,7 @@
                     <li><a href="{{ url_for('get_books') }}">Home</a></li>
                     <li><a href="{{ url_for('login') }}">Log In</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
+                    <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a href="#">Add Book</a></li>
                 </ul>
             </div>
@@ -38,6 +39,7 @@
             <li><a href="{{ url_for('get_books') }}">Home</a></li>
             <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
+            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="#">Add Book</a></li>
         </ul>
 

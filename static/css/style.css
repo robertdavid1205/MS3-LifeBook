@@ -26,3 +26,10 @@ nav.nav-extended {
 .flashes h4 {
     line-height: 3;
 }
+
+body {
+    background-image:url(../images/book-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
