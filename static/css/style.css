@@ -31,5 +31,18 @@ body {
     background-image:url(../images/library-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     
 }
+
+main {
+    flex: 1 0 auto;
+  }
+
+.footer-copyright {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 600;
+}
+
