@@ -27,14 +27,8 @@ nav.nav-extended {
     line-height: 3;
 }
 
-body {
-    background-image:url(../images/library-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    
+body {   
+    background-color: #ffe0b2
 }
 
 main {

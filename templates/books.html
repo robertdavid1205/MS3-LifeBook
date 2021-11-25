@@ -1,39 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-{% for book in books %}
-<!-- display database books in cards-->
-<div class="row">
-    <div class="col s12 m6">
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title"> {{ book.book_author }}</span>
-                <span class="card-title"> {{ book.book_title }}</span>
-            </div>
-            <div class="card-content">
-                <p>{{ book.details }}</p>
-            </div>
-            <div class="card-content">
-                <p>{{ book.date_published }}</p>
-            </div>
-            <div class="card-content">
-                <p>{{ book.genre }}</p>
-            </div>
-            <div class="card-action">
-                 <a href="#">This is a link</a>
-            </div>
-        </div>
-    </div>
-</div>
-{% endfor %}
-
+<!-- 
     {% for book in books %}
         {{ book.book_author }}<br>
         {{ book.book_title }}<br>
         {{ book.date_published }}<br>
         {{ book.details }}<br>
         {{ book.genre }}<br>
-    {% endfor %}
+    {% endfor %} -->
+
+{% for book in books %}
+<div class="container s10">
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header white-text blue lighten-2 text-shadow"><i class="fas fa-book"></i>{{ book.book_title }}</div>
+            <div class="collapsible-body white-text blue lighten-2 text-shadow">
+                <span>By: {{ book.book_author }}</span><br>
+                <span>{{ book.date_published }}</span><br>
+                <span>{{ book.genre }}</span><br>
+                <span>{{ book.details }}</span><br>
+            </div>
+        </li>
+    </ul>
+</div>
+{% endfor %}
 
 {% endblock %}    
