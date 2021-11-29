@@ -10,20 +10,30 @@
         {{ book.genre }}<br>
     {% endfor %} -->
 
-{% for book in books %}
-<div class="container s10">
+<section>
+    <!--  header image-->
+    <div class="container photo-container">
+        <img class="header-photo" src="../static/images/library-photo.png" alt=" photo of a library">
+    </div>
+</section>
+
+<div class="container s10 added_book">
     <ul class="collapsible">
+        {% for book in books %}
         <li>
-            <div class="collapsible-header white-text blue lighten-2 text-shadow"><i class="fas fa-book"></i>{{ book.book_title }}</div>
+            <div class="collapsible-header white-text blue lighten-2 text-shadow">
+                <i class="fas fa-book"></i><strong>{{ book.book_title }}</strong>
+            </div>
             <div class="collapsible-body white-text blue lighten-2 text-shadow">
-                <span>By: {{ book.book_author }}</span><br>
+                <span><strong>By: {{ book.book_author }}</strong></span><br>
                 <span>{{ book.date_published }}</span><br>
                 <span>{{ book.genre }}</span><br>
                 <span>{{ book.details }}</span><br>
             </div>
         </li>
+        {% endfor %}
     </ul>
 </div>
-{% endfor %}
+
 
 {% endblock %}    
