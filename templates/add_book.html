@@ -3,18 +3,45 @@
 
 <h3 class="center-align">Add Your Book</h3>
 
-<div class="row">
+<div class="row card-panel white-text blue lighten-2 text-shadow">
     <form class="col s12" method="POST" action="" >
         <div class="row">
             <div class="input-field col s10 offset-m1">
-                <i class="fas fa-user-circle prefix"></i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">First Name</label>
+                <i class="fas fa-book-open prefix"></i>
+                <textarea id="book_author" name="book_author" minlength="5" maxlength="50"
+                         type="text" class="validate" required></textarea>
+                <label for="book_author">Book Author</label>
             </div>
+        </div>
+        <div class="row">
             <div class="input-field col s10 offset-m1">
-                <i class="fas fa-user-circle prefix"></i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Telephone</label>
+                <i class="fas fa-signature prefix"></i>
+                <textarea id="book_title" name="book_title" minlength="5" maxlength="50"
+                         type="text" class="validate" required></textarea>
+                <label for="book_title">Book Title</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s10 offset-m1">
+                <i class="far fa-calendar-check prefix"></i>
+                <input id="date_published" name="date_published" type="text" class="datepicker validate" required>
+                <label for="date_published">Date Published</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s10 offset-m1">
+                <i class="fas fa-info-circle prefix"></i>
+                <textarea id="details" name="details" minlength="5" maxlength="200"
+                         type="text" class="validate" required></textarea>
+                <label for="details">Summary</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s10 offset-m1">
+                <i class="fas fa-genderless prefix"></i>
+                <textarea id="genre" name="genre" minlength="5" maxlength="50"
+                         type="text" class="validate" required></textarea>
+                <label for="genre">Genre</label>
             </div>
         </div>
     </form>
