@@ -15,15 +15,16 @@
         {% for book in books %}
         <li>
             <div class="collapsible-header white-text blue lighten-2 text-shadow">
+                <a href="" class="btn-small red accent-4">Edit</a>
                 <i class="fas fa-book"></i><strong>{{ book.book_title }}</strong>
             </div>
             <div class="collapsible-body white-text blue lighten-2 text-shadow">
-                <span><strong>By: {{ book.book_author }}</strong></span><br>
-                <span>{{ book.date_published }}</span><br>
-                <span>{{ book.genre }}</span><br>
-                <span>{{ book.details }}</span><br>
-                <span>{{ book.your_reason }}</span><br>
-                <p><em>by: {{ book.created_by }}</em></p>
+                <span><strong>Author:</strong> {{ book.book_author }}</span><br>
+                <span><strong>Published:</strong> {{ book.date_published }}</span><br>
+                <span><strong>Genre:</strong> {{ book.genre }}</span><br>
+                <span><strong>Summary:</strong> {{ book.details }}</span><br>
+                <span><strong>Your reason:</strong> {{ book.your_reason }}</span><br>
+                <p><em><strong>by:</strong> {{ book.created_by }}</em></p>
             </div>
         </li>
         {% endfor %}
