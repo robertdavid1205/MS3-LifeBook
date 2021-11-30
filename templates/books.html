@@ -8,6 +8,8 @@
     </div>
 </section>
 
+<h3 class="center-align">Library</h3>
+<!--  library-->
 <div class="container s10 added_book">
     <ul class="collapsible">
         {% for book in books %}
@@ -20,6 +22,8 @@
                 <span>{{ book.date_published }}</span><br>
                 <span>{{ book.genre }}</span><br>
                 <span>{{ book.details }}</span><br>
+                <span>{{ book.your_reason }}</span><br>
+                <p><em>by: {{ book.created_by }}</em></p>
             </div>
         </li>
         {% endfor %}
