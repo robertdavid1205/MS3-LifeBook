@@ -11,6 +11,10 @@
 
 </section>
 
+<section>
+
+</section>
+
 <h3 class="center-align">Library</h3>
 <!--  library-->
 <div class="container s10 added_book">
@@ -27,6 +31,7 @@
                 <span><strong>Genre:</strong> {{ book.genre }}</span><br>
                 <span><strong>Summary:</strong> {{ book.details }}</span><br>
                 <span><strong>Your reason:</strong> {{ book.your_reason }}</span><br>
+                <span><strong><a href= "{{ book.link }}" class="Link.com">Link Here</a></strong></span>
                 <p><em><strong>by:</strong> {{ book.created_by }}</em></p>
             </div>
         </li>
