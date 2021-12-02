@@ -10,7 +10,9 @@
             <div class="input-field col s10 offset-m1">
                 <i class="fas fa-book-open prefix"></i>
                 <textarea id="book_author" name="book_author" minlength="5" maxlength="50"
-                         type="text" class="validate" required></textarea>
+                         type="text" class="validate" required>
+                        {{- book.book_author -}}
+                </textarea>
                 <label for="book_author">Book Author</label>
             </div>
         </div>
@@ -19,7 +21,9 @@
             <div class="input-field col s10 offset-m1">
                 <i class="fas fa-signature prefix"></i>
                 <textarea id="book_title" name="book_title" minlength="5" maxlength="50"
-                         type="text" class="validate" required></textarea>
+                         type="text" class="validate" required>
+                         {{- book.book_title -}}
+                </textarea>
                 <label for="book_title">Book Title</label>
             </div>
         </div>
@@ -27,7 +31,8 @@
         <div class="row">
             <div class="input-field col s10 offset-m1">
                 <i class="far fa-calendar-check prefix"></i>
-                <input id="date_published" name="date_published" type="text" class="datepicker validate" required>
+                <input id="date_published" name="date_published" type="text" 
+                    value="{{ book.date_published }}" class="datepicker validate" required>
                 <label for="date_published">Date Published</label>
             </div>
         </div>
@@ -36,7 +41,9 @@
             <div class="input-field col s10 offset-m1">
                 <i class="fas fa-info-circle prefix"></i>
                 <textarea id="details" name="details" minlength="5" maxlength="200"
-                         type="text" class="validate" required></textarea>
+                         type="text" class="validate" required>
+                         {{- book.details -}}
+                </textarea>
                 <label for="details">Summary</label>
             </div>
         </div>
@@ -45,7 +52,9 @@
             <div class="input-field col s10 offset-m1">
                 <i class="fas fa-genderless prefix"></i>
                 <textarea id="genre" name="genre" minlength="5" maxlength="50"
-                         type="text" class="validate" required></textarea>
+                         type="text" class="validate" required>
+                         {{- book.genre -}}
+                </textarea>
                 <label for="genre">Genre</label>
             </div>
         </div>
@@ -54,13 +63,31 @@
             <div class="input-field col s10 offset-m1">
                 <i class="fas fa-brain prefix"></i>
                 <textarea id="your_reason" name="your_reason" minlength="15" maxlength="250"
-                         type="text" class="validate" required></textarea>
+                         type="text" class="validate" required>
+                         {{- book.your_reason -}}
+                </textarea>
                 <label for="your_reason">Your Reason</label>
             </div>
         </div>
-        <!--submit button-->
+        <!--link to book-->
+        <div class="row">
+            <div class="input-field col s10 offset-m1">
+                <i class="fas fa-brain prefix"></i>
+                <textarea id="link" name="link" minlength="15" maxlength="250"
+                         type="text" class="validate" required>
+                         {{- book.link -}}
+                </textarea>
+                <label for="link">Link Here</label>
+            </div>
+        </div>
+        <!--submit area-->
         <div class="row">
             <div class="col s10 center-align">
+                <!--cancel button-->
+                <a href="{{ url_for('get_books') }}" class="btn waves-effect waves-light red">
+                    Cancel <i class="fas fa-window-close"></i>
+                </a>
+                <!--submit button-->
                 <button class="btn waves-effect waves-light" type="submit">Edit Book
                     <i class="fas fa-pen-square right"></i>
                 </button>
