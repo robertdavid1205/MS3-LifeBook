@@ -25,8 +25,8 @@
         <p class="center-align"><strong>
                 Peace and Love
         </strong></p>
-        <div class="col s2">
-            <img src="../static/images/library-photo.webp" alt="photo of a library" class="circle responsive-img library-photo" height="100" width="200">
+        <div class="col s2 library-photo-container">
+            <img src="../static/images/library-photo.webp" alt="photo of a library" class="circle responsive-img library-photo">
         </div>
     </div>
 <section>
@@ -36,22 +36,24 @@
 <h3 class="center-align">Library</h3>
 
 <!--search bar-->
-<div class="row card-panel orange lighten-3">
-    <form action="{{ url_for('search') }}" method="POST" class="col s10">
-        <div class="row valign-wrapper center-align">
-            <div class="input-field col s10 offset-l2 m8 s12 white">
-                <i class="fas fa-search prefix"></i>
-                <input type="text" name="query" id="query" minlength="1" class="validate">
-                <label for="query">Search Book</label>
+<div class="container">
+    <div class="row card-panel orange lighten-3">
+        <form action="{{ url_for('search') }}" method="POST" class=" col s12">
+            <div class="row valign-wrapper center-align">
+                <div class="col s6 m8 input-field white">
+                    <i class="fas fa-search prefix"></i>
+                    <input type="text" name="query" id="query" minlength="1" class="validate">
+                    <label for="query">Search Book</label>
+                </div>
+                <div class="col s6 m8">
+                    <button type="submit" class="orange lighten-1 btn text-shadow">
+                        <i class="fas fa-search left">Search</i>
+                    </button>
+                    <a href="{{ url_for('get_books') }}" class="red btn text-shadow">Reset</a>
+                </div>
             </div>
-            <div class="col s12 m8">
-                <button type="submit" class="orange lighten-1 btn text-shadow">
-                    <i class="fas fa-search left">Search</i>
-                </button>
-                <a href="{{ url_for('get_books') }}" class="red btn text-shadow">Reset</a>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 
 <!--  library-->
