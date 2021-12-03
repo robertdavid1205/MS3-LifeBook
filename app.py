@@ -27,7 +27,13 @@ mongo = PyMongo(app)
 @app.route("/get_books")
 def get_books():
     books = list(mongo.db.books.find())
-    print(books)
+    return render_template("books.html", books=books)
+
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    books = list(mongo.db.books.find({"$search": query}))
     return render_template("books.html", books=books)
 
 

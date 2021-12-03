@@ -34,6 +34,26 @@
 </section>
 
 <h3 class="center-align">Library</h3>
+
+<!--search bar-->
+<div class="row card-panel orange lighten-3">
+    <form action="{{ url_for('search') }}" method="POST" class="col s10">
+        <div class="row valign-wrapper center-align">
+            <div class="input-field col s10 offset-l2 m8 s12 white">
+                <i class="fas fa-search prefix"></i>
+                <input type="text" name="query" id="query" minlength="1" class="validate">
+                <label for="query">Search Book</label>
+            </div>
+            <div class="col s12 m8">
+                <button type="submit" class="orange lighten-1 btn text-shadow">
+                    <i class="fas fa-search left">Search</i>
+                </button>
+                <a href="{{ url_for('get_books') }}" class="red btn text-shadow">Reset</a>
+            </div>
+        </div>
+    </form>
+</div>
+
 <!--  library-->
 <div class="container s10 added_book">
     <ul class="collapsible">

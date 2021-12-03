@@ -90,3 +90,8 @@ h3, h2{
 .collapsible-header strong{
     line-height: 36px;
 }
+
+/* profile */
+.user-name-badge{
+    margin-top: 100px;
+}
