@@ -56,6 +56,7 @@
 
 <!--  library-->
 <div class="container s10 added_book">
+    {% if books|length > 0 %}
     <ul class="collapsible">
         {% for book in books %}
         <li>
@@ -78,6 +79,9 @@
         </li>
         {% endfor %}
     </ul>
+    {% else %}
+        <h3 class=" red-text center-align">No Results Found</h3>
+    {% endif %}
 </div>
 
 
