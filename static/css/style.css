@@ -79,8 +79,30 @@ h3, h2{
     font-family: 'Indie Flower', cursive;
     font-weight: 600;
     margin-top: auto;
+    font-size: 1.7em;
+    padding-top: 0;
+    color: #ffe0b2;
 }
 
+.footer-containter{
+    display: flex;
+    margin-bottom: 0;
+}
+
+.footer-icons{
+    text-align: right;
+}
+
+.footer-icons ul li i{
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 1.7em;
+    color: #ffe0b2;
+}
+
+.footer-text {
+    color: #ffe0b2;
+}
 
   /* add book form */
 .add_book_form{
@@ -103,4 +125,15 @@ h3, h2{
 /* profile */
 .user-name-badge{
     margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .footer-icons ul li i {
+        font-size: 1.2em;
+    }
+
+    .page-footer {
+        font-size: 1.2em;
+    }
 }
