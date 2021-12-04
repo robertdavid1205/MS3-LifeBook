@@ -8,6 +8,8 @@ nav.nav-extended {
     padding-left: 9px;
 }
 
+
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7) ;
 }
@@ -53,6 +55,7 @@ body {
 h3, h2{
     font-family: 'Indie Flower', cursive;
     font-weight: 600;
+    margin-top: 40px
 }
 
 /* what is lifebook */
@@ -108,6 +111,7 @@ h3, h2{
 .add_book_form{
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 40px;
 }
 
 .btn-small {
@@ -127,7 +131,7 @@ h3, h2{
     margin-top: 100px;
 }
 
-
+/*media queries*/
 @media only screen and (max-width: 600px) {
     .footer-icons ul li i {
         font-size: 1.2em;

@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 {% extends "base.html" %}
 {% block content %}
 
@@ -5,7 +8,7 @@
     <!--  header image-->
     <div class="col photo-div" >
         <div class="container photo-container">
-            <img class="header-photo" src="../static/images/book-header.webp" alt=" photo of a library" height="230" width="1500">
+            <img class="header-photo" src="../static/images/book-header.webp" alt=" photo of a library" height="320" width="1520">
         </div>
     </div>
 
@@ -62,7 +65,7 @@
     <ul class="collapsible">
         {% for book in books %}
         <li>
-            <div class="collapsible-header white-text blue lighten-2 text-shadow">
+            <div class="collapsible-header white-text teal lighten-1 text-shadow">
                 {% if session.user|lower == book.created_by|lower %}
                 <a href="{{ url_for('delete_book', book_id=book._id) }}" class="btn-small red accent-4">Delete</a>
                 <a href="{{ url_for('edit_book', book_id=book._id) }}" class="btn-small orange accent-4">Edit</a>
@@ -70,7 +73,7 @@
             {% filter upper %}
                 <i class="fas fa-book"></i><strong>{{ book.book_title }}</strong>
             </div>
-            <div class="collapsible-body white-text blue lighten-2 text-shadow">
+            <div class="collapsible-body white-text teal lighten-2 text-shadow">
                 <span><strong>Author:</strong> {{ book.book_author }}</span><br>
                 <span><strong>Published:</strong> {{ book.date_published }}</span><br>
                 <span><strong>Genre:</strong> {{ book.genre }}</span><br>

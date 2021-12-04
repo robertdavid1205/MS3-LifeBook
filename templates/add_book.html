@@ -1,9 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+
 {% extends "base.html" %}
 {% block content %}
 
 <h3 class="center-align">Add Your Book</h3>
 
-<div class="row card-panel orange darken-1 add_book_form">
+<div class="row card-panel teal lighten-2 add_book_form">
     <form class="col s12" method="POST" action="{{ url_for('add_book') }}" >
         <!--book author-->
         <div class="row">
