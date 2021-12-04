@@ -6,7 +6,7 @@
 
 <h3 class="center-align">Edit Book</h3>
 
-<div class="row card-panel white add_book_form">
+<div class="row card-panel teal lighten-2 add_book_form">
     <form class="col s12" method="POST" action="{{ url_for('edit_book', book_id=book._id) }}" >
         <!--book author-->
         <div class="row">
@@ -16,7 +16,7 @@
                          type="text" class="validate" required>
                         {{- book.book_author -}}
                 </textarea>
-                <label for="book_author">Book Author</label>
+                <label for="book_author" class="black-text">Book Author</label>
             </div>
         </div>
         <!--book title-->
@@ -27,7 +27,7 @@
                          type="text" class="validate" required>
                          {{- book.book_title -}}
                 </textarea>
-                <label for="book_title">Book Title</label>
+                <label for="book_title" class="black-text">Book Title</label>
             </div>
         </div>
         <!--date picker-->
@@ -36,7 +36,7 @@
                 <i class="far fa-calendar-check prefix"></i>
                 <input id="date_published" name="date_published" type="text" 
                     value="{{ book.date_published }}" class="datepicker validate" required>
-                <label for="date_published">Date Published</label>
+                <label for="date_published" class="black-text">Date Published</label>
             </div>
         </div>
         <!--book summary-->
@@ -47,7 +47,7 @@
                          type="text" class="validate" required>
                          {{- book.details -}}
                 </textarea>
-                <label for="details">Summary</label>
+                <label for="details" class="black-text">Summary</label>
             </div>
         </div>
         <!--book genre -->
@@ -58,7 +58,7 @@
                          type="text" class="validate" required>
                          {{- book.genre -}}
                 </textarea>
-                <label for="genre">Genre</label>
+                <label for="genre" class="black-text">Genre</label>
             </div>
         </div>
         <!--user's reason-->
@@ -69,7 +69,7 @@
                          type="text" class="validate" required>
                          {{- book.your_reason -}}
                 </textarea>
-                <label for="your_reason">Your Reason</label>
+                <label for="your_reason" class="black-text">Your Reason</label>
             </div>
         </div>
         <!--link to book-->
@@ -80,7 +80,7 @@
                          type="text" class="validate" required>
                          {{- book.link -}}
                 </textarea>
-                <label for="link">Link Here</label>
+                <label for="link" class="black-text">Link Here</label>
             </div>
         </div>
         <!--submit area-->

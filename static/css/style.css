@@ -100,12 +100,12 @@ h3, h2{
     padding-left: 2px;
     padding-right: 2px;
     font-size: 1.7em;
-    color: #ffe0b2;
+    /*color: #ffe0b2;*/
 }
 
-.footer-text {
+/*.footer-text {
     color: #ffe0b2;
-}
+}*/
 
   /* add book form */
 .add_book_form{
