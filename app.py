@@ -32,6 +32,7 @@ def get_books():
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    # search a book
     query = request.form.get("query")
     books = list(mongo.db.books.find({"$text": {"$search": query}}))
     return render_template("books.html", books=books)
@@ -71,10 +72,11 @@ def login():
         if existing_user:
             # ensure hashed password is matching user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                    existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(request.form.get("username")))
-                    return redirect(url_for("profile", username=session["user"]))
+                    return redirect(url_for(
+                        "profile", username=session["user"]))
             else:
                 # invalid password
                 flash("Incorrect Username and/or Password")
@@ -91,7 +93,8 @@ def login():
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # get the session username's user from database
-    username = mongo.db.users.find_one({"username": session["user"]})["username"]
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
     return render_template("profile.html", username=username)
 
     if session["user"]:
@@ -110,6 +113,7 @@ def logout():
 
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
+    # add a new book
     if request.method == "POST":
         book = {
             "book_author": request.form.get("book_author"),
@@ -117,7 +121,7 @@ def add_book():
             "date_published": request.form.get("date_published"),
             "details": request.form.get("details"),
             "genre": request.form.get("genre"),
-            "your_reason": request.form.get("your reason"), 
+            "your_reason": request.form.get("your reason"),
             "created_by": session["user"]
         }
         mongo.db.books.insert_one(book)
@@ -129,6 +133,7 @@ def add_book():
 
 @app.route("/edit_book/<book_id>", methods=["GET", "POST"])
 def edit_book(book_id):
+    # edit added book
     if request.method == "POST":
         submit = {
             "book_author": request.form.get("book_author"),
@@ -136,7 +141,7 @@ def edit_book(book_id):
             "date_published": request.form.get("date_published"),
             "details": request.form.get("details"),
             "genre": request.form.get("genre"),
-            "your_reason": request.form.get("your reason"), 
+            "your_reason": request.form.get("your reason"),
             "created_by": session["user"]
         }
         mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
@@ -147,6 +152,7 @@ def edit_book(book_id):
 
 
 @app.route("/delete_book/<book_id>")
+# delete added book
 def delete_book(book_id):
     mongo.db.books.remove({"_id": ObjectId(book_id)})
     flash("Book Successfully Deleted")
