@@ -104,6 +104,33 @@ Features to be built in future releases:
 * A newsletter subscription system with monthnly newsletters.
 * An page with events for likeminded people.
 
+### Design Choices
+---
+* The goal for this site was to create a simple and easy to use platform, that expresses calm and relaxation and a simple and easy to use system.
+
+### Colors
+---
+Main colors are **Orange** / **Teal** and **Light-Orange**. Most of the website is **Light-Orange** and **Teal** to give the feeling of something relaxing and calmness, the **Orange** color is used in the Navbar and Footer and ads a nice touch to create a contrast and define the elements.
+
+### Fonts
+---
+I have used Indie Flower as the font for the most part of website, to give it a relaxed look. And the standard Arial for the forms and other text, as is clean and easy to read.
+
+### Structure
+---
+In the upper part there's a navigation menu, which contains the name of the page "Life Book" in the left side , then in the right side whe have 3 pages "Home, Login and Register"(and 4 pages "Home, Log Out, Profile, Add Book" once you are logged in).
+On the **Home** page, we have a descriptive image of a book in nature and under that we have **What is Life Book**, with some information about what we are all about, and underneath there's a  **Search Bar** and then the **Library** and at the bottom of the page the **Footer**.
+Then The **Login** page, displays a form with the required steps to login, and the **Register** page , which displays another form with the username and password and the register button.
+Next there's the **Logout** page that logs the user out, disaplys a message that the user has been logged out and redirects you to the log in page.
+**Profile** page is user's page and will have more features in the future.
+Then we have our **Add Book** page where you will find a form for adding a new book to the website.
+
+
+
+
+
+
+
 1   bugs found
  1. I was doing the register function and it wouldn't update the database , i found out that i have written the methon adn action attributes in child div instead of the form .
  2. the contant of the books was displayed in lower letters ..... i have used a jinja expression that wrapped the library in 
