@@ -30,10 +30,11 @@
     4. [Device testing](#performed-tests-on)
     5. [Browser compatibility](#browser-compatability)
     6. [Testing user stories](#testing-user-stories)
-8. [Features](#features)
-9. [Languages](#languages-used)
-10. [Deployment](#deployment)
-11. [Credits](#credits)
+8. [Bugs](#bugs)
+9. [Features](#features)
+10. [Languages](#languages-used)
+11. [Deployment](#deployment)
+12. [Credits](#credits)
     1. [Code](#code)
     2. [Media](#media)
     3. [Acknowledgements](#acknowledgements)
@@ -235,7 +236,7 @@ Results here: [Home](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/s
         </tr>
   </table> 
  
-&nbsp;[Screenshot]()
+&nbsp;[Screenshot](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/user%20stories/user-story-1.jpg)
 
 
 2. As a first time user I want to find books that help me in my search.
@@ -254,7 +255,7 @@ Results here: [Home](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/s
         </tr>
   </table>
   
-&nbsp;[Screenshot](https://github.com/robertdavid1205/CI_MS1_Unfelde_Records/blob/master/docs/user_story/user-story2.png)
+&nbsp;[Screenshot](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/user%20stories/user-story-2.jpg)
 
 
   3. As a returning user, I want to be able to register and login.
@@ -273,7 +274,7 @@ Results here: [Home](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/s
         </tr>
   </table>
   
-&nbsp;[Screenshot](https://github.com/robertdavid1205/CI_MS1_Unfelde_Records/blob/master/docs/user_story/user-story3.png)
+&nbsp;[Screenshot](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/user%20stories/user-story-3.jpg)
 
 
   4. As a returning user, I want to be able to add new books to the site and share my reason with the users.
@@ -292,7 +293,7 @@ Results here: [Home](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/s
         </tr>
   </table>
   
-&nbsp;[Screenshot](https://github.com/robertdavid1205/CI_MS1_Unfelde_Records/blob/master/docs/user_story/user-story4.png)
+&nbsp;[Screenshot](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/user%20stories/user-story-4.jpg)
 
 
   5. As a frequent user I want to be able to find new books , that I don't know about.
@@ -311,16 +312,23 @@ Results here: [Home](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/s
         </tr>
   </table>
   
-&nbsp;[Screenshot](https://github.com/robertdavid1205/CI_MS1_Unfelde_Records/blob/master/docs/user_story/user-story5.png)
+&nbsp;[Screenshot](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/user%20stories/user-story-5jpg.jpg)
 
+### Bugs
+---
 
+  1.  I was doing the register function and it wouldn't update the database , i found out that i have written the methon adn action attributes in child div instead of the form .
 
-1   bugs found
- 1. I was doing the register function and it wouldn't update the database , i found out that i have written the methon adn action attributes in child div instead of the form .
- 2. the contant of the books was displayed in lower letters ..... i have used a jinja expression that wrapped the library in 
-    {% filter upper %}
+  2.  The content of the books was displayed in lower letters.
+     * i have used a jinja expression that wrapped the library in 
+       {% filter upper %}
     
-    {% endfilter %}
- 3. photo in what is lifebook was not displaying correctly it was displaying on the left side of the div..... i have used  display: flex;
-    align-items: center;
-    justify-content: center;    and now is displayed on the center.
+       {% endfilter %}
+
+  3. Photo in what is lifebook was not displaying correctly it was displaying on the left side of the div.
+     * I have used the following css  
+      display: flex;
+      align-items: center;
+      justify-content: center;    
+     and now is displayed on the center.
+
