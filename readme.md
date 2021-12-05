@@ -125,7 +125,44 @@ Next there's the **Logout** page that logs the user out, disaplys a message that
 **Profile** page is user's page and will have more features in the future.
 Then we have our **Add Book** page where you will find a form for adding a new book to the website.
 
+### Frameworks, libraries and other tools 
+---
 
+1. [Git](https://git-scm.com/)
+2. [GitHub](https://github.com/)
+3. [Materialize](https://materializecss.com/)
+4. [Balsamiq](https://balsamiq.com/)
+5. [Font Awesome](https://fontawesome.com/)
+6. [Google Fonts](https://fonts.google.com/)
+7. [Am I Responsive](http://ami.responsivedesign.is/)
+8. [Picresize.com](https://picresize.com/)
+9. [Javascript](https://www.javascript.com/)
+10. [Python](https://www.python.org/)
+11. [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+12. [MongoDB](https://www.mongodb.com/)
+13. [Heroku](https://id.heroku.com/login)
+
+### Wireframes 
+---
+1. Home
+* [mobile]()
+* [tablet]()
+* [desktop]()
+
+2. Register
+* [mobile]()
+* [tablet]()
+* [desktop]()
+
+3. Log In
+* [mobile]()
+* [tablet]()
+* [desktop]()
+
+4. Add Book
+* [mobile]()
+* [tablet]()
+* [desktop]()
 
 
 
