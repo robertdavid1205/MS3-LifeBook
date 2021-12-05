@@ -1,3 +1,15 @@
+![Mockup of website](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/mockup/mock-up.jpg)
+
+[View the deployed website](https://robertdavid120)
+
+
+# Life Book
+---
+
+### Table of Contents
+
+
+
 1   bugs found
  1. I was doing the register function and it wouldn't update the database , i found out that i have written the methon adn action attributes in child div instead of the form .
  2. the contant of the books was displayed in lower letters ..... i have used a jinja expression that wrapped the library in 
