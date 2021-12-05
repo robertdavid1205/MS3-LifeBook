@@ -1,6 +1,6 @@
 ![Mockup of website](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/mockup/mock-up.jpg)
 
-[View the deployed website](https://robertdavid120)
+[View the deployed website](https://lifebook-ms3.herokuapp.com/)
 
 
 # Life Book
@@ -492,3 +492,61 @@ A simple footer, designed in hte same color as the navbar, with links to the soc
 ![Footer](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/Footer.jpg)
 
 ---
+
+### Languages Used
+---
+
+* Html5
+* Css3
+* JavaScript
+* Python
+* Jinja Template
+
+### Deployment
+---
+
+#### GitHub Pages
+
+GitHub was used to deploy this website. To do the same...
+
+1. Log into your GitHub account and find the [repository](https://github.com/robertdavid1205/MS3-LifeBook). 
+2. Click on 'Settings' in the repository. 
+3. Click 'Pages' in the left-hand menu once you're in Settings. 
+4. Click 'Source'.
+5. Click the dropdown menu which says 'None', then select 'Master Branch'.
+6. Wait for page to refresh automatically. 
+7. Under GitHub pages you can now find a link to the published live website. 
+
+#### Heroku
+
+To deploy the project to a live website the below steps were followed:
+
+1. Go to Heroku.com and log in (if not registered you must create an account first).
+2. Make sure your project has a file specifying which applications are needed to run your site, use the below code to automatically generate this
+> pip3 freeze --local > requirements.txt
+3. Also make sure you have a Procfile which tells Heroku which file runs the app (in our case it is app.py), use the below code to generate this. The Procfile may add a blank line which can cause issues so check and remove this if needed.
+>  echo web: python app.py > Procfile (note that this has no extension)
+4. In Heroku click on create a new app. The Heroku app name must be unique and generally uses - instead of spaces and all lowercase letters. Then select the region closest to you and create app.
+5. To connect our app to Heroku we can setup an automatic deployment from our GitHub repo. Within your Heroku app go to the deployment tab and click on GitHub for the deployment method. Make sure your GitHub profile is displayed below and enter the repository name and search. Make sure your repo is displayed and click connect to this app.
+6. Before enabling automatic deployment, we still have a couple more steps.
+7. Click on the settings tab in your app and click on reveal config vars, you can then enter the information that is in the hidden env.py file. Typically, you need to include IP, PORT, SECRET_KEY, MONGO_URI and MONGO_DBNAME.
+8. Git add, commit and push the changes in your Gitpod (adding the requirements and Procfile files) as epxplained in the above section.
+9. Go back to your Heroku app and the deployment tab - now click to enable automatic deployment and then click deploy branch.
+10. Heroku will now receive the code from GitHub and build your app, once it is complete you should see that your app has been successfully deployed.
+11. Now the deployed site is available and should automatically update whenever changes are pushed to GitHub from Gitpod.
+
+### Credits
+---
+
+#### Code
+* *Materialize* - code for Navbar / Footer / Forms
+* *Code Institute* - python code from TravelTimN  - lesson  Flask Rebuild 2020
+
+
+#### Media
+* [Pexels]https://www.pexels.com/
+
+### Aknowledgements
+
+* To Mo Shami, my mentor, for understanding me, for the feedback and support.
+* To Code Institute Slack Community for advice and guidance. 
