@@ -180,30 +180,31 @@ Result here: [CSS](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/sta
 
 #### Performance
 
-I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) to check performance of the website and it passes with scores between 92 and 100 on all pages on all 4 criterias Performance/ Accesibility/ Best Practices/ SEO.
+I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) to check performance of the website and it passes with scores between 90 and 100 on all pages on all 4 criterias Performance/ Accesibility/ Best Practices/ SEO.
 
-Results here: [Home]()
-              [Add Book]()
-              [Edit Book]()
-              [Login]()
-              [Register]()
+Results here: [Home](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/lighthouse/books(home).jpg)
+              [Add Book](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/lighthouse/add_book.jpg)
+              [Edit Book](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/lighthouse/edit_book.jpg)
+              [Login](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/lighthouse/login.jpg)
+              [Register](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/lighthouse/register.jpg)
 
 #### Performed tests on:
 
 * HP Envy
+* iPhone X
 * Samsung Galaxy A52
 * Samsung Galaxy Tab S6
 
 ##### Tests performed:
 
 1. Page links and icons redirect the user to the corect place on both desktop and mobile versions.
-2. The "Our Story" section is scrollable in mobile and tablet views.
+2. The pages scrollable in mobile and tablet views.
 3. Nav bar links are able to redirect users to the correct page and there are no broken links.
-4. The "Send Demo" modal opens up correctly and it closes by clicking on the close(x) icon.
+4. The "Add Book" page opens up correctly and it adds the data to the database.
 5. In the case of an incorrect URL, the user is redirected to a 404 page wich will direct them back to the home page. 
-6. The Gallery section collapes to 2 columns in mobile view.
-7. The cards in the Releases page redirect the users to the correct page to buy the product.
-8. All the buttons display a hover effect in both views.
+6. The login page works correctly.
+7. The register page works correctly.
+8. All the buttons function correctly.
 
 ##### Results:
 
@@ -216,6 +217,101 @@ Results here: [Home]()
 * *Microsoft Edge*: Website and user stories work as expected.
 * *Firefox*: Website and user stories work as expected.
 
+#### Testing user stories
+---
+1. As a first time user I want to find out what the site is all about.
+  <table>
+        <tr>
+            <th>Feature</th>
+            <th>Action</th>
+            <th>Expected Result</th>
+            <th>Actual Result</th>
+        </tr>
+        <tr>
+            <td>Home Page</td>
+            <td>Scroll the page</td>
+            <td>To find out information about the site</td>
+            <td>Works as expected</td>
+        </tr>
+  </table> 
+ 
+&nbsp;[Screenshot]()
+
+
+2. As a first time user I want to find books that help me in my search.
+  <table>
+        <tr>
+            <th>Feature</th>
+            <th>Action</th>
+            <th>Expected Result</th>
+            <th>Actual Result</th>
+        </tr>
+        <tr>
+            <td>Search Bar</td>
+            <td>type text in the search bar and click search</td>
+            <td>display the books from libary that match the search</td>
+            <td>Works as expected</td>
+        </tr>
+  </table>
+  
+&nbsp;[Screenshot](https://github.com/robertdavid1205/CI_MS1_Unfelde_Records/blob/master/docs/user_story/user-story2.png)
+
+
+  3. As a returning user, I want to be able to register and login.
+  <table>
+        <tr>
+            <th>Feature</th>
+            <th>Action</th>
+            <th>Expected Result</th>
+            <th>Actual Result</th>
+        </tr>
+        <tr>
+            <td>Register and login page</td>
+            <td>click on register or login type your username and pass</td>
+            <td>register or login</td>
+            <td>Works as expected</td>
+        </tr>
+  </table>
+  
+&nbsp;[Screenshot](https://github.com/robertdavid1205/CI_MS1_Unfelde_Records/blob/master/docs/user_story/user-story3.png)
+
+
+  4. As a returning user, I want to be able to add new books to the site and share my reason with the users.
+  <table>
+        <tr>
+            <th>Feature</th>
+            <th>Action</th>
+            <th>Expected Result</th>
+            <th>Actual Result</th>
+        </tr>
+        <tr>
+            <td>Add Book</td>
+            <td>Click on add book and fill in the form</td>
+            <td>Upload new book in the database and dyplay it on the library</td>
+            <td>Works as expected</td>
+        </tr>
+  </table>
+  
+&nbsp;[Screenshot](https://github.com/robertdavid1205/CI_MS1_Unfelde_Records/blob/master/docs/user_story/user-story4.png)
+
+
+  5. As a frequent user I want to be able to find new books , that I don't know about.
+  <table>
+        <tr>
+            <th>Feature</th>
+            <th>Action</th>
+            <th>Expected Result</th>
+            <th>Actual Result</th>
+        </tr>
+        <tr>
+            <td>Library</td>
+            <td>Scroll to the bottom of every page</td>
+            <td>Find all the titles from the database</td>
+            <td>Works as expected</td>
+        </tr>
+  </table>
+  
+&nbsp;[Screenshot](https://github.com/robertdavid1205/CI_MS1_Unfelde_Records/blob/master/docs/user_story/user-story5.png)
 
 
 
