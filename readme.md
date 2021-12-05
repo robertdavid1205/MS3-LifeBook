@@ -145,24 +145,24 @@ Then we have our **Add Book** page where you will find a form for adding a new b
 ### Wireframes 
 ---
 1. Home
-* [mobile]()
-* [tablet]()
-* [desktop]()
+* [mobile](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/home-mobile.jpg)
+* [tablet](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/home-tablet.jpg)
+* [desktop](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/home-desktop.jpg)
 
 2. Register
-* [mobile]()
-* [tablet]()
-* [desktop]()
-
-3. Log In
-* [mobile]()
-* [tablet]()
-* [desktop]()
+* [mobile](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/register-mobile.jpg)
+* [tablet](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/register-tablet.jpg)
+* [desktop](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/register-desktop.jpg)
 
 4. Add Book
-* [mobile]()
-* [tablet]()
-* [desktop]()
+* [mobile](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/add-book-mobile.jpg)
+* [tablet](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/add-book-tablet.jpg)
+* [desktop](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/add-book-desktop.jpg)
+
+3. Log In
+* [mobile](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/login-mobile.jpg)
+* [tablet](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/login-tablet.jpg)
+* [desktop](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/login-desktop.jpg)
 
 
 
