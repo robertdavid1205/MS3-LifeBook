@@ -55,8 +55,54 @@ Life Book is an online library of books that, in some way or another changed you
 3. Stay up to date with what's new.
 4. To have the ability to update or delete their own posts.
 
+### User Experience
+
+The website was designed with mobile first in mind by creating easy readable and easy to separate pieces of content.
+The pages were structured in a way that most importat content is displayed in front of your eyes, then in order of priority down the line.
+The user experience is designed so that the user can discover needed information and share their life changing books with the other users. 
+
+#### Target Audience
+
+* Anyone
+* People who are not happy with their life and want to chane it for the better
+* People who are interested in self help and spirituality.
+
+### User Stories
+---
+1. As a first time user I want to find out what the site is all about.
+2. As a first time user I want to find books that help me in my search.
+3. As a returning user, I want to be able to register and login.
+4. As a returning user, I want to be able to add new books to the site and share my reason with the users.
+5. As a frequent user I want to be able to find new books , that I don't know about.
 
 
+### Site Owner Goals
+---
+1. To have all the information easy to reach.
+2. To have an attractive and easy to use site.
+3. To have a site that is responsive on all devices and easy to navigate.
+4. To have as many users as possible, users that register and use our service.
+
+### Scope
+---
+The scope of the project is defined by:
+
+* Navigation bar, for a simple navigation of the website
+* Footer available in all the website's pages, with links to social media platforms
+* An about section, that contains information about the idea of the website.
+* A search bar , which will be helpful in the search of a defined author or title.
+* A library which contains all the titles in the database.
+* The register page will contain a form for new members to sign up and be part of the community.
+* A login page will contain a form for registered users to login.
+* An add book page that contains a form that is helpfull in adding a new title to the site.
+* A edit page which contains a form from that is helpfull in editing the books previously uploaded.
+* Favicon to help users identify the website easier.
+
+Features to be built in future releases:
+
+* Options to like and comment on the titles.
+* A newsletter subscription system with monthnly newsletters.
+* An page with events for likeminded people.
 
 1   bugs found
  1. I was doing the register function and it wouldn't update the database , i found out that i have written the methon adn action attributes in child div instead of the form .
