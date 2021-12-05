@@ -332,3 +332,163 @@ Results here: [Home](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/s
       justify-content: center;    
      and now is displayed on the center.
 
+### Features
+---
+The website has 4 pages and 11 features.
+
+#### Current Features
+
+##### Page 1: Home Page
+
+The home page contains 7 sections:
+
+1. A navbar with links to the rest of the pages and the Logo.
+2. The "what is Life Book" section which displays information about the site.
+3. A search bar which is used to search for certain books from the library.
+4. The library which hosts all the books from the site.
+5. A Edit Button.(only in user mode)
+6. A Delete Button.(only in user mode)
+7. The footer with the social media links on it.
+
+The page is fully responsive on mobile and tablet.
+
+###### Section 1 Navbar
+
+It's simple and in contrast , contains the needed information.
+![Navbar](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/navbar.jpg)
+
+###### Section 2 What is Life Book
+
+It's a paragraph with an image and text. Displays the information about the site.
+![What is Life Book](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/what_is_lifebook.jpg)
+
+###### Section 3 Search Bar
+
+Simple and easy to use. helps you in seaching your favourite book
+![Search Bar](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/search_bar.jpg)
+
+###### Section 4 Library
+
+Simple and easy to use accordion style.
+![Library](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/Library.jpg)
+
+###### Section 5 Edit Button
+
+Edit button sends you to the edit page.
+![Edit Book](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/edit_book.jpg)
+
+###### Section 6 Delete Button
+
+Delete button deletes the selected book.
+![Delete Book](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/delete.jpg)
+
+###### Section 7 Footer
+
+A simple footer, designed in hte same color as the navbar, with links to the social media platforms
+![Footer](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/Footer.jpg)
+
+---
+##### Page 2: Log In
+
+The log in page contains 3 sections:
+
+1. A navbar with links to the rest of the pages and a logo.
+2. A form that requires your username and password.
+3. The footer with the social media links on it.
+
+The page is fully responsive on mobile and tablet.
+
+###### Section 1 Navbar
+
+It's simple and in contrast , contains the needed information..
+![Navbar](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/navbar.jpg)
+
+###### Section 2 Log In Form
+
+The form with the req fields for logging in.
+![Log In Form](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/login.jpg)
+
+###### Section 3 Footer
+
+A simple footer, designed in hte same color as the navbar, with links to the social media platforms
+![Footer](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/Footer.jpg)
+
+---
+##### Page 3: Register
+
+The log in page contains 3 sections:
+
+1. A navbar with links to the rest of the pages and a logo.
+2. A form that requires your username and password.
+3. The footer with the social media links on it.
+
+The page is fully responsive on mobile and tablet.
+
+###### Section 1 Navbar
+
+It's simple and in contrast , contains the needed information..
+![Navbar](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/navbar.jpg)
+
+###### Section 2 Register Form
+
+The form with the req fields for registering.
+![Register Form](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/register.jpg)
+
+###### Section 3 Footer
+
+A simple footer, designed in hte same color as the navbar, with links to the social media platforms
+![Footer](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/Footer.jpg)
+
+---
+##### Page 3: Profile
+
+The profile page contains 3 sections:
+
+1. A navbar with links to the rest of the pages and a logo.
+2. A simple div with your name.(future plans for adding more features)
+3. The footer with the social media links on it.
+
+The page is fully responsive on mobile and tablet.
+
+###### Section 1 Navbar
+
+It's simple and in contrast , contains the needed information.
+![Navbar](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/navbar.jpg)
+
+###### Section 2 Profile
+
+A simple div with some custom css.
+![Profile](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/profile.jpg)
+
+###### Section 3 Footer
+
+A simple footer, designed in hte same color as the navbar, with links to the social media platforms
+![Footer](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/Footer.jpg)
+
+---
+##### Page 4: Add Book
+
+The add book page contains 3 sections:
+
+1. A navbar with links to the rest of the pages and a logo.
+2. A form with required fields to upload a book.
+3. The footer with the social media links on it.
+
+The page is fully responsive on mobile and tablet.
+
+###### Section 1 Navbar
+
+It's simple and in contrast , contains the needed information.
+![Navbar](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/navbar.jpg)
+
+###### Section 2 Add Book
+
+The add book form
+![Add Book](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/add_book_form.jpg)
+
+###### Section 3 Footer
+
+A simple footer, designed in hte same color as the navbar, with links to the social media platforms
+![Footer](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/features/Footer.jpg)
+
+---
