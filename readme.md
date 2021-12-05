@@ -26,11 +26,10 @@
 7. [Testing](#testing)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performed-tests-on)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
+    3. [Performance](#performance)
+    4. [Device testing](#performed-tests-on)
+    5. [Browser compatibility](#browser-compatability)
+    6. [Testing user stories](#testing-user-stories)
 8. [Features](#features)
 9. [Languages](#languages-used)
 10. [Deployment](#deployment)
@@ -164,6 +163,58 @@ Then we have our **Add Book** page where you will find a form for adding a new b
 * [tablet](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/login-tablet.jpg)
 * [desktop](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/wireframes/login-desktop.jpg)
 
+### Testing
+---
+
+#### HTML Validation
+
+I used [W3C Markup Validation Service](https://validator.w3.org/) to validate the HTML code. All the pages pass with some errors due to the use of jinja template.
+
+Results here: [HTML](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/validation/html_check.jpg)
+              
+#### CSS Validation
+
+I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the CSS code. All the pages pass with 0 errors.
+
+Result here: [CSS](https://github.com/robertdavid1205/MS3-LifeBook/blob/main/static/docs/validation/css-validator.jpg)
+
+#### Performance
+
+I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) to check performance of the website and it passes with scores between 92 and 100 on all pages on all 4 criterias Performance/ Accesibility/ Best Practices/ SEO.
+
+Results here: [Home]()
+              [Add Book]()
+              [Edit Book]()
+              [Login]()
+              [Register]()
+
+#### Performed tests on:
+
+* HP Envy
+* Samsung Galaxy A52
+* Samsung Galaxy Tab S6
+
+##### Tests performed:
+
+1. Page links and icons redirect the user to the corect place on both desktop and mobile versions.
+2. The "Our Story" section is scrollable in mobile and tablet views.
+3. Nav bar links are able to redirect users to the correct page and there are no broken links.
+4. The "Send Demo" modal opens up correctly and it closes by clicking on the close(x) icon.
+5. In the case of an incorrect URL, the user is redirected to a 404 page wich will direct them back to the home page. 
+6. The Gallery section collapes to 2 columns in mobile view.
+7. The cards in the Releases page redirect the users to the correct page to buy the product.
+8. All the buttons display a hover effect in both views.
+
+##### Results:
+
+* All the devices passed all tests.
+
+#### Browser compatibility
+
+* *Google Chrome*: Website and user stories work as expected.
+* *Safari*: Website and user stories work as expected.
+* *Microsoft Edge*: Website and user stories work as expected.
+* *Firefox*: Website and user stories work as expected.
 
 
 
